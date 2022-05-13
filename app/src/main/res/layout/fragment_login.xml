@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDefault"
+    android:padding="@dimen/thirdtydp"
+    tools:context="gts.trainningcourse.mockproject.view.fragment.login.LoginFragment">
+
+    <EditText
+        android:id="@+id/edtLoginUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:autofillHints=""
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textColor="@color/color_text_black"
+        app:layout_constraintBottom_toTopOf="@+id/edtLoginPassword"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/edtLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:textColor="@color/color_text_black"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/ghichu"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ghichu"
+        app:layout_constraintBottom_toTopOf="@id/btnRegister"
+        android:layout_marginBottom="@dimen/margin20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin40dp"
+        android:background="@drawable/roundstyle"
+        android:padding="@dimen/tendp"
+        android:shadowColor="#fff"
+        android:textColor="@color/color_text_white"
+        android:text="@string/register"
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin40dp"
+        android:layout_marginRight="@dimen/margin40dp"
+        android:layout_marginTop="@dimen/margin20dp"
+        android:background="@drawable/roundstyle"
+        android:textColor="@color/color_text_white"
+        android:padding="@dimen/tendp"
+        android:shadowColor="#fff"
+        android:text="@string/login"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

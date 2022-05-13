@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorBackgroundDefault"
+android:padding="@dimen/thirdtydp"
+tools:context="gts.trainningcourse.mockproject.view.fragment.login.LoginFragment">
+
+<EditText
+    android:id="@+id/edtRegisterUsername"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:autofillHints=""
+    android:hint="@string/input_your_name"
+    android:textColorHint="@color/color_text_black"
+    android:inputType="text"
+    android:textColor="@color/color_text_black"
+    app:layout_constraintBottom_toTopOf="@+id/edtRegisterPassword"
+    app:layout_constraintEnd_toStartOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0" />
+
+<EditText
+    android:id="@+id/edtRegisterPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:textColor="@color/color_text_black"
+    android:textColorHint="@color/color_text_black"
+    android:autofillHints=""
+    android:hint="@string/password"
+    android:inputType="textPassword"
+    app:layout_constraintBottom_toTopOf="@+id/edtRegisterEmail"
+    app:layout_constraintEnd_toStartOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/edtRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/color_text_black"
+        android:textColorHint="@color/color_text_black"
+        android:autofillHints=""
+        android:hint="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/edtRegisterPhone"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="text"
+        tools:ignore="TextFields" />
+    <EditText
+        android:id="@+id/edtRegisterPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/color_text_black"
+        android:textColorHint="@color/color_text_black"
+        android:autofillHints=""
+        android:hint="@string/phone_number"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegisterOk"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="text"
+        tools:ignore="TextFields" />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnRegisterOk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/thirdtydp"
+    android:layout_marginRight="@dimen/thirdtydp"
+    android:background="@drawable/roundstyle"
+    android:textColor="@color/color_text_white"
+    android:layout_marginBottom="@dimen/margin30dp"
+    android:padding="@dimen/tendp"
+    android:shadowColor="#fff"
+    android:text="@string/register"
+    app:layout_constraintTop_toBottomOf="@+id/edtRegisterPassword"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

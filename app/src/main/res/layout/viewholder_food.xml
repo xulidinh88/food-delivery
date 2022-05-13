@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/food_background"
+    android:paddingStart="@dimen/margin30dp"
+    android:paddingEnd="@dimen/margin30dp"
+    android:layout_marginEnd="@dimen/fifteendp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/foodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/fifteendp"
+        android:text="@string/c_m_nh_l_m"
+        app:layout_constraintBottom_toTopOf="@+id/foodImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/foodImageView"
+        android:layout_width="@dimen/margin80dp"
+        android:layout_height="@dimen/margin80dp"
+        app:layout_constraintBottom_toTopOf="@id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodTitle"
+        app:srcCompat="@drawable/cat_rice"
+        tools:layout_editor_absoluteY="171dp"
+        android:contentDescription="@string/food_image" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10dp"
+        android:textSize="@dimen/fifteendp"
+        android:textColor="@color/nearRed"
+        android:text="@string/vnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvFee"
+        app:layout_constraintTop_toBottomOf="@+id/foodImageView"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/tvFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margin10dp"
+        android:layout_marginEnd="@dimen/margin5dp"
+        android:textSize="@dimen/fifteendp"
+        android:text="@string/_50000"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodImageView"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin15dp"
+        android:paddingEnd="@dimen/margin15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/rice"
+        android:background="@drawable/category_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFee" />
+</androidx.constraintlayout.widget.ConstraintLayout>

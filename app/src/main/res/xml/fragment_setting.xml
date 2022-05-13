@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gts.trainningcourse.mockproject.view.fragment.profile.SettingFragment">
+
+    <PreferenceCategory android:title="@string/setting"
+        android:order="1">
+        <Preference
+            android:key="key_location"
+            android:title="@string/location"
+            android:icon="@drawable/ic_baseline_location_on_24"/>
+
+        <SwitchPreference
+            android:key="key_mode"
+            android:title="@string/dark_mode"
+            android:summaryOff="@string/off"
+            android:summaryOn="@string/on"
+            android:icon="@drawable/dark_mode_4_24"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Support"
+        android:order="2">
+        <Preference
+            android:key="key_about"
+            android:title="About"
+            android:icon="@drawable/ic_baseline_info_24"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Account"
+        android:order="3">
+        <Preference
+            android:key="key_delete_acc"
+            android:title="@string/delete_account"
+            android:icon="@drawable/ic_baseline_delete_round"/>
+
+        <Preference
+            android:key="key_log_out"
+            android:title="Log out"
+            android:icon="@drawable/ic_baseline_sensor_door_24"/>
+    </PreferenceCategory>
+</PreferenceScreen>

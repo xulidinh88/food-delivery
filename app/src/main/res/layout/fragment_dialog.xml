@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin30dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="gts.trainningcourse.mockproject.view.fragment.dialog.MyDialogFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        android:layout_marginBottom="@dimen/fifteendp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text25sp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fifteendp"
+        android:text="@string/hello_blank_fragment"
+        tools:layout_editor_absoluteY="164dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:text="@string/close"
+        android:backgroundTint="@color/teal_200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
