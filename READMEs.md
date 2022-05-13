@@ -1,0 +1,2 @@
+- App use MVP model
+- I worte Login, Home, Home details, Cart, get data from real time firebase
